@@ -1,12 +1,17 @@
+/* All styles are currently tests and placeholders, not final */
+
+/* Tag selectors ---------------------- */
+
 body {
     background-color: lightblue;
-    font-family: Helvetica, Arial, sans-serif
+    font-family: Arimo, Helvetica, Arial, sans-serif
 }
 
 small {
     font-size: 0.7em;
 }
 
+/* Element selectors -------------------------------------- */
 .wider-part {
     width: 80%;
     text-align: center;
@@ -23,4 +28,11 @@ small {
     width: 60%;
     margin: auto;
     background-color: lightcyan;
+}
+
+/* Styles for desktop version of site ------------------- */
+@media screen and (min-width: 769px) {
+    body {
+        background-color: darkblue; /*testing mediaquery, placeholder */
+    }
 }
