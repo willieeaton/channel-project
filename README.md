@@ -31,3 +31,7 @@ of the personalities
 * Contact page: mailto form; email addresses for webmaster, general, and
 individual cast members (if available and wanted)
 
+Special thanks:
+Placeholder text sourced from Sagan Ipsum (http://saganipsum.com).
+Placeholder images sourced from placeholder.com
+
