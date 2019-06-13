@@ -9,23 +9,49 @@
 /* Tag selectors ---------------------- */
 
 body {
-    background-color: lightblue;
+    background-color: ghostwhite;
     font-family: Arimo, Helvetica, Arial, sans-serif;
     color: black;
     font-size: 16px;
+    margin: 0;
 }
 
 small {
     font-size: 0.7em;
 }
 
+form {
+    background-color: lightslategrey;
+    border: 2px solid darkslategrey;
+    padding: 1em;
+}
+
+input[type='text'],
+input[type='email'],
+select {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    min-width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+textarea {
+    min-width: 50%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 /* Class selectors -------------------------------------- */
 
 .non-content {
-    width: 80%;
+    width: 100%;
     text-align: center;
     margin: auto;
-    background-color: seashell;
+    background-color: #404040;
 }
 
 .non-content p {
@@ -36,7 +62,7 @@ small {
 .content {
     width: 60%;
     margin: auto;
-    background-color: lightcyan;
+    background-color: ghostwhite;
 }
 
 
@@ -47,7 +73,6 @@ small {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 2px 4px 3px 0 darkslategrey;
     height: 300px;
     margin: 0;
 }

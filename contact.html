@@ -25,12 +25,22 @@
                 <form action="contact.html" method="post">
                     <label for="name">Your name:</label>
                     <input type="text" id="name" name="user_name">
+                    <br>
 
-                    <label for="email">Your email address</label>
+                    <label for="email">Your email address:</label>
                     <input type="email" id="email" name="user_email">
+                    <br>
 
+                    <label for="messagetype">What is the nature of the message?</label>
+                    <select id="messagetype" name="user_messagetype">
+                        <option value="feedback"">Feedback on shows</option> 
+                        <option value="bug_report">Website bug report</option> 
+                        <option value="business">Advertising and business</option> 
+                        <option value="complaints">General wailing and gnashing of teeth</option> 
+                    </select>
                     <label for="comment">What's going on?</label>
                     <textarea id="comment" name="user_comment">Gently apply feedback to this box</textarea>
+                    <br><br>
 
                     <button type="submit">Press here to tell us all about it!</button>
                     <button type="reset">Oops, no, delete all please.</button>
