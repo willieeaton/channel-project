@@ -1,7 +1,7 @@
 Channel Project
 2019
 Willie Eaton
-For Codelouisville
+For CodeLouisville
 
 This is a CSS, HTML, and JS project for my front-end web development course.
 It is intended to serve as a rough draft for a landing page for a friend's
@@ -34,4 +34,4 @@ individual cast members (if available and wanted)
 Special thanks:
 Placeholder text sourced from Sagan Ipsum (http://saganipsum.com).
 Placeholder images sourced from placeholder.com
-
+normalize.css used under MIT license, available from (github.com/necolas/normalize.css)
