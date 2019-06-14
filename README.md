@@ -1,6 +1,7 @@
-Channel Project
-2019
+Channel Project, 2019
+
 Willie Eaton
+
 For CodeLouisville
 
 This is a CSS, HTML, and JS project for my front-end web development course.
@@ -32,6 +33,6 @@ of the personalities
 individual cast members (if available and wanted)
 
 Special thanks:
-Placeholder text sourced from Sagan Ipsum (http://saganipsum.com).
-Placeholder images sourced from placeholder.com
-normalize.css used under MIT license, available from (github.com/necolas/normalize.css)
+* Placeholder text sourced from Sagan Ipsum (http://saganipsum.com).
+* Placeholder images sourced from placeholder.com
+* normalize.css used under MIT license, available from (https://github.com/necolas/normalize.css)

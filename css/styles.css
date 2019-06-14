@@ -101,7 +101,8 @@ textarea {
     background-color: darkslategrey;
 }
 
-div.castContainer {
+div.castContainer,
+div.showContainer {
     display: flex;
     flex-direction: row;
     flex: 250px 1;
@@ -109,7 +110,8 @@ div.castContainer {
     justify-content: space-around;
 }
 
-div.castMember {
+div.castMember,
+div.show {
     display: inline-block;
     flex-direction: column;
     background-color: silver;
@@ -122,12 +124,17 @@ div.castMember {
 .castMember h3,
 .castMember h4,
 .castMember h5,
-.castMember p {
+.castMember p, 
+.show h3,
+.show h4,
+.show h5,
+.show p {
     text-align: center;
     margin: 0.5em;
 }
 
-.castMember img {
+.castMember img,
+.show img {
     max-width: 100%;
     min-width: 50px;
     padding: 1em;
