@@ -193,6 +193,7 @@ div.show {
     padding: 1em;
     border-radius: 50px;
     margin: auto;
+    object-fit: cover;
 }
 
 /* end cast/show previews */

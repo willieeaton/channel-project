@@ -12,8 +12,7 @@ CSS features:
 * Responsivity: Navbar changes from horiz to dropdown on mobile
 * Minimalist, modern design.  Sans serif font family; possibly all-lowercase
 text formatting (haven't decided on that yet; may make selectable)
-* Google Fonts integration for cross-browser display of a Helvetica-like font
-(Arimo) 
+* Google Fonts integration for cross-browser display of a Helvetica-like font (Currently using Lato and/or Open Sans; open to change) 
 
 JS features:
 * Dropdown menu for mobile devices
@@ -27,12 +26,12 @@ and/or screen caps from shows if available
 * Cast page: Landing page for all cast members; on desktop use JS to display
 a profile for each performer (photograph, name, shows, bio); on mobile give
 each individual an HTML page with the same content
-* Show page: Works similarly to cast page, but details the programming instead
-of the personalities
+* Show page: Works similarly to cast page, but details the programming instead of the personalities
 * Contact page: mailto form; email addresses for webmaster, general, and
 individual cast members (if available and wanted)
 
 Special thanks:
 * Placeholder text sourced from Sagan Ipsum (http://saganipsum.com).
-* Placeholder images sourced from placeholder.com
+* Placeholder images on Cast page sourced from Placekitten (https://placekitten.com/).
+* Placeholder images on Shows and About pages sourced from the Dummy Image Generator (http://dummy-image-generator.com/)
 * normalize.css used under MIT license, available from (https://github.com/necolas/normalize.css)
