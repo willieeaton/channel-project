@@ -20,10 +20,18 @@ small {
     color: silver;
 }
 
+p {
+    text-align: justify;
+}
+
+/* Begin selectors for forms */
+
 form {
     background-color: silver;
     border: 2px solid darkslategrey;
-    padding: 1em;
+    padding: 2em;
+    width: 75%;
+    margin: auto;
 }
 
 input[type='text'],
@@ -31,19 +39,37 @@ input[type='email'],
 select {
     padding: 0.5em;
     margin-bottom: 1em;
-    min-width: 50%;
+    width: 100%
 }
 
 label {
     display: block;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
+    text-align: right;
 }
 
 textarea {
-    min-width: 50%;
+    width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
 }
+
+button {
+    box-shadow: 1px 1px 1px #333;
+    border-radius: 0;
+    border: none;
+    color: ghostwhite;
+    background-color: #333;
+    padding: 0.5em 1em;
+    margin: 0;
+}
+
+button:last-child {
+    margin-top: 1em;
+    background-color: #400;
+}
+
+/* end forms */
 
 h1, h2, h3 {
     font-family: 'Open Sans';
@@ -61,6 +87,7 @@ h1 {
     text-align: center;
     margin: auto;
     background-color: #333;
+    color: ghostwhite;
 }
 
 .non-content p {
@@ -96,11 +123,15 @@ h1 {
 .nav-item a {
     padding: 1em;
     text-decoration: none;
-    color: ghostwhite;
+    color: ghostwhite; /*override default link behavior*/
     width: 100%;
     height: 100%;
     font-family: 'Oswald';
     text-transform: uppercase;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
 }
 
 .nav-item img {
@@ -110,13 +141,18 @@ h1 {
 .content img {
     float: left;
     padding: 1em;
+    max-width: 50%;
 }
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+    /*The classic clearfix, to keep images from floating right out of 
+    their containers*/
 }
+
+/* begin formatting for cast/show previews */
 
 div.castContainer,
 div.showContainer {
@@ -159,6 +195,8 @@ div.show {
     margin: auto;
 }
 
+/* end cast/show previews */
+
 /* Styles for desktop version of site ------------------- */
 @media screen and (min-width: 769px) {
     .content {
@@ -184,10 +222,16 @@ div.show {
     .nav-item:first-child {
         margin-top: 0;
         margin-bottom: 0;
+        /* logo is intended to be height of entire header.  currently
+        contains transparent pixels for the "whitespace" */
     }
     
     .nav-item:nth-child(2) {
         margin-left: auto;
+        /* this looks a little wacky, it's just here to ensure that
+        in horizontal nav bar layout, the 2nd child (the LI after 
+        the logo image) pushes the logo to the left and starts the
+        remainder of the nav bar on the right. */
     }
 
 }
