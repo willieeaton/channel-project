@@ -11,23 +11,23 @@
 :root {
     /* Define the most commonly used colors on the page, so they 
      * can be changed en masse more easily */
-    --base-text-color: rgba(255,255,255,0.5);
-    --base-h1-color: #0c5698;
-    --base-h2-color: rgba(255,255,255,0.5);
-    --base-background-color: #0f4778;
-    --content-background-color: #0c3961;
-    --menu-text-color: #eb8a02;
-    --menu-link-color: #eb8a02;
-    --menu-background-color: #3e2000;
+    --base-text-color: white;
+    --base-h1-color: #975c08;
+    --base-h2-color: #0c5698;
+    --base-background-color: #031628;
+    --content-background-color: #052644;
+    --menu-text-color: white;
+    --menu-link-color: #031628;
+    --menu-background-color: #975c08;
     --legal-color: #eb8a02;
-    --form-background-color: #eb8a02;
-    --form-accent-color: #eb8a02;
+    --form-background-color: #78d2d6;
+    --form-accent-color: #975c08;
     --form-button-text-color: #adeaed;
-    --form-submit-button-background-color: #031628;
-    --form-delete-button-background-color: #3e2400;
-    --member-text-color: rgba(0,0,0,0.5);
-    --member-background-color: #eb8a02;
-    --member-h3-color: #3e2400;
+    --form-submit-button-background-color: #e98025;
+    --form-delete-button-background-color: #e98025;
+    --member-text-color: #3e2000;
+    --member-background-color: #975c08;
+    --member-h3-color: black;
 }
 /* Tag selectors ---------------------- */
 
@@ -108,15 +108,6 @@ h2 {
     color: var(--base-h2-color);
 }
 
-header {
-    border-bottom: 2px dashed var(--menu-text-color);
-}
-
-footer {
-    border-top: 2px dashed var(--menu-text-color);
-}
-
-
 /* Class selectors -------------------------------------- */
 
 .non-content {
@@ -137,7 +128,6 @@ footer {
     max-width: 800px;
     margin: auto;
     background-color: var(--content-background-color);
-    padding: 1em;
 }
 
 
@@ -210,7 +200,7 @@ div.show {
     margin: 1em;
     padding: 1em;
     max-width: 25%;
-    min-width: 175px;
+    min-width: 225px;
 }
 
 .castMember h3,
