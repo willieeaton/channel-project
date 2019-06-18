@@ -138,6 +138,7 @@ footer {
     margin: auto;
     background-color: var(--content-background-color);
     padding: 1em;
+    min-height: calc(100vh - 4em);
 }
 
 
