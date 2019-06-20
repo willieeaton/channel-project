@@ -15,6 +15,7 @@
     --base-h1-color: #0c5698;
     --base-h2-color: rgba(255,255,255,0.5);
     --base-background-color: #0f4778;
+    --base-link-color: #eb8a02;
     --content-background-color: #0c3961;
     --menu-text-color: #eb8a02;
     --menu-link-color: #eb8a02;
@@ -47,13 +48,17 @@ p {
     text-align: justify;
 }
 
+a {
+    color: var(--base-link-color)
+}
+
 /* Begin selectors for forms */
 
 form {
     background-color: var(--form-background-color);
     border: 2px solid var(--form-accent-color);
     padding: 2em;
-    width: 75%;
+    /* width: 75%; */
     margin: auto;
 }
 
@@ -138,6 +143,7 @@ footer {
     margin: auto;
     background-color: var(--content-background-color);
     padding: 1em;
+    min-height: calc(100vh - 4em);
 }
 
 
@@ -244,6 +250,10 @@ div.show {
 
 /* Styles for desktop version of site ------------------- */
 @media screen and (min-width: 769px) {
+    form {
+        width: 75%;
+    }
+
     .content {
         width: 70%;
     }

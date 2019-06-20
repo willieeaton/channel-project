@@ -11,24 +11,26 @@
 :root {
     /* Define the most commonly used colors on the page, so they 
      * can be changed en masse more easily */
-     --base-text-color: rgba(255,255,255,0.5);
-     --base-h1-color: #0c5698;
-     --base-h2-color: rgba(255,255,255,0.5);
-     --base-background-color: #0f4778;
-     --base-link-color: #eb8a02;
-     --content-background-color: #0c3961;
-     --menu-text-color: #eb8a02;
-     --menu-link-color: #eb8a02;
-     --menu-background-color: #3e2000;
-     --legal-color: #eb8a02;
-     --form-background-color: #eb8a02;
-     --form-accent-color: rgb(255,255,255,0.5);
-     --form-button-text-color: #adeaed;
-     --form-submit-button-background-color: #031628;
-     --form-delete-button-background-color: #3e2400;
-     --member-text-color: rgba(0,0,0,0.5);
-     --member-background-color: #eb8a02;
-     --member-h3-color: #3e2400;
+    --base-text-color: rgba(0,0,0,0.5);
+    --base-h1-color: #413b00;
+    --base-h2-color: rgba(0,0,0,0.5);
+    --base-background-color: #ffcd00;
+    --base-link-color: #413400;
+    --content-background-color: #ffcd00;
+    --menu-text-color: #412d00;
+    --menu-link-color: #412d00;
+    --menu-background-color: #ffb101;
+    --menu-current-page-color: #ffb101;
+    --menu-current-page-background: #3e2000;
+    --legal-color: #ffe801;
+    --form-background-color: #ffe801;
+    --form-accent-color: #916500;
+    --form-button-text-color: #413400;
+    --form-submit-button-background-color: #ffe801;
+    --form-delete-button-background-color: #ffb101;
+    --member-text-color: rgba(0,0,0,0.5);
+    --member-background-color: #ffe801;
+    --member-h3-color: #413b00;
 }
 /* Tag selectors ---------------------- */
 
@@ -48,15 +50,18 @@ p {
     text-align: justify;
 }
 
+a {
+    color: var(--base-link-color)
+}
+
 /* Begin selectors for forms */
 
 form {
     background-color: var(--form-background-color);
     border: 2px solid var(--form-accent-color);
     padding: 2em;
-    width: 75%;
+    /* width: 75%; */
     margin: auto;
-    border-radius: 2em;
 }
 
 input[type='text'],
@@ -111,11 +116,11 @@ h2 {
 }
 
 header {
-    border-bottom: 2px dashed var(--menu-text-color);
+    border-bottom: 2px dotted var(--menu-text-color);
 }
 
 footer {
-    border-top: 2px dashed var(--menu-text-color);
+    border-top: 2px dotted var(--menu-text-color);
 }
 
 
@@ -214,9 +219,6 @@ div.show {
     padding: 1em;
     max-width: 25%;
     min-width: 175px;
-    border: 2px solid var(--member-text-color);
-    border-radius: 3em;
-
 }
 
 .castMember h3,
@@ -250,6 +252,10 @@ div.show {
 
 /* Styles for desktop version of site ------------------- */
 @media screen and (min-width: 769px) {
+    form {
+        width: 75%;
+    }
+
     .content {
         width: 70%;
     }
