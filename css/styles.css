@@ -21,6 +21,7 @@
      --menu-link-color: #eb8a02;
      --menu-background-color: #3e2000;
      --legal-color: #eb8a02;
+     --icon-rotation: -30deg; 
      --form-background-color: #eb8a02;
      --form-accent-color: rgb(255,255,255,0.5);
      --form-button-text-color: #adeaed;
@@ -38,10 +39,6 @@ body {
     color: var(--base-text-color);
     font-size: 16px;
     margin: 0;
-}
-
-small {
-    color: var(--legal-color);
 }
 
 p {
@@ -121,6 +118,12 @@ footer {
 
 /* Class selectors -------------------------------------- */
 
+
+.legal a {
+    color: var(--legal-color);
+    font-size: 0.75em;
+}
+
 .non-content {
     width: 100%;
     text-align: center;
@@ -177,6 +180,23 @@ footer {
 
 .nav-item img {
     max-height: 3em;
+}
+
+.social-media-button {
+    filter: invert(1) sepia(1) brightness(0.5) saturate(100) hue-rotate(var(--icon-rotation));
+    /* neat hack to change black line images into colors on CSS, uses invert to turn
+    black to white, sepia to give white a non-zero amount of saturation, brightness and
+    saturate to dial that up to a font-level tint, and then a hue-rotate to get
+    the hue of the tint to the correct value.  learned from these two sites:
+    https://www.domysee.com/blogposts/coloring-white-images-css-filter
+    https://codepen.io/stilllife00/pen/avXpgJ */
+}
+
+.secondary-navbar ul {
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-end;
+    align-items: middle;
 }
 
 .content img {
@@ -270,14 +290,14 @@ div.show {
     }
 
 
-    .nav-item:first-child {
+    .primary-navbar ul .nav-item:first-child {
         margin-top: 0;
         margin-bottom: 0;
         /* logo is intended to be height of entire header.  currently
         contains transparent pixels for the "whitespace" */
     }
     
-    .nav-item:nth-child(2) {
+    .primary-navbar ul .nav-item:nth-child(2) {
         margin-left: auto;
         /* this looks a little wacky, it's just here to ensure that
         in horizontal nav bar layout, the 2nd child (the LI after 
