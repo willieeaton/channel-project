@@ -117,7 +117,6 @@ footer {
 
 select {
     display: inline;
-    color: blue;
 }
 
 /* Class selectors -------------------------------------- */
@@ -126,6 +125,8 @@ select {
 .legal a {
     color: var(--legal-color);
     font-size: 0.75em;
+    text-align: center;
+    margin: auto;
 }
 
 .non-content {
@@ -169,7 +170,6 @@ select {
 }
 
 .nav-item a {
-    padding: 1em;
     text-decoration: none;
     color: var(--menu-link-color); /*override default link behavior*/
     width: 100%;
@@ -288,11 +288,7 @@ div.show {
         margin: 1em;
         /* flex: 1 2em; */
     }
-
-    .nav-item a {
-        padding: 0;
-    }
-
+    
 
     .primary-navbar ul .nav-item:first-child {
         margin-top: 0;
