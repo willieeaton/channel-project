@@ -115,6 +115,10 @@ footer {
     border-top: 2px dashed var(--menu-text-color);
 }
 
+select {
+    display: inline;
+    color: blue;
+}
 
 /* Class selectors -------------------------------------- */
 
