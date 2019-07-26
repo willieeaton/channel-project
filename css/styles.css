@@ -22,6 +22,7 @@
      --menu-background-color: #3e2000;
      --legal-color: #eb8a02;
      --icon-rotation: -30deg; 
+     --icon-brightness: 0.5;
      --form-background-color: #eb8a02;
      --form-accent-color: rgb(255,255,255,0.5);
      --form-button-text-color: #adeaed;
@@ -45,6 +46,9 @@ p {
     text-align: justify;
 }
 
+a {
+    color: var(--base-link-color);
+}
 /* Begin selectors for forms */
 
 form {
@@ -115,10 +119,6 @@ footer {
     border-top: 2px dashed var(--menu-text-color);
 }
 
-select {
-    display: inline;
-}
-
 /* Class selectors -------------------------------------- */
 
 
@@ -187,7 +187,7 @@ select {
 }
 
 .social-media-button {
-    filter: invert(1) sepia(1) brightness(0.5) saturate(100) hue-rotate(var(--icon-rotation));
+    filter: invert(1) sepia(1) brightness(var(--icon-brightness)) saturate(100) hue-rotate(var(--icon-rotation));
     /* neat hack to change black line images into colors on CSS, uses invert to turn
     black to white, sepia to give white a non-zero amount of saturation, brightness and
     saturate to dial that up to a font-level tint, and then a hue-rotate to get
@@ -215,6 +215,15 @@ select {
     display: table;
     /*The classic clearfix, to keep images from floating right out of 
     their containers*/
+}
+
+.nav-item select {
+    width: 6em;
+    color: var(--menu-link-color);
+    background-color: var(--menu-background-color);
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: 0.75em;
 }
 
 /* begin formatting for cast/show previews */
@@ -288,7 +297,6 @@ div.show {
         margin: 1em;
         /* flex: 1 2em; */
     }
-    
 
     .primary-navbar ul .nav-item:first-child {
         margin-top: 0;
