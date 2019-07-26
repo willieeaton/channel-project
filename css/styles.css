@@ -24,7 +24,7 @@
      --icon-rotation: -30deg; 
      --icon-brightness: 0.5;
      --form-background-color: #eb8a02;
-     --form-accent-color: rgb(255,255,255,0.5);
+     --form-accent-color: rgba(255,255,255,0.5);
      --form-button-text-color: #adeaed;
      --form-submit-button-background-color: #031628;
      --form-delete-button-background-color: #3e2400;
