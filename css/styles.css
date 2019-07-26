@@ -159,7 +159,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
-    height: 400px;
+    height: 250px;
     margin: 0;
 }
 
@@ -167,6 +167,14 @@ footer {
     margin: 0.5em;
     flex: 0 1em;
     display: flex;
+}
+
+.primary-navbar ul .nav-item:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    /* doesn't need whitespace, it's built into the image.  looks too
+     * spacious on mobile layout anyway */
 }
 
 .nav-item a {
@@ -298,12 +306,7 @@ div.show {
         /* flex: 1 2em; */
     }
 
-    .primary-navbar ul .nav-item:first-child {
-        margin-top: 0;
-        margin-bottom: 0;
-        /* logo is intended to be height of entire header.  currently
-        contains transparent pixels for the "whitespace" */
-    }
+
     
     .primary-navbar ul .nav-item:nth-child(2) {
         margin-left: auto;

@@ -9,7 +9,7 @@ It is intended to serve as a rough draft for a landing page for a friend's
 YouTube media-review channel.
 
 CSS features: 
-* Responsivity: Navbar changes from horiz to vertical on mobile
+* Responsivity: Navbar changes from horiz to vertical on mobile; show and cast pages use flex to accommodate smaller screens
 * Minimalist, modern design.  Sans serif font family
 * Google Fonts integration for cross-browser display of a Helvetica-like font (Currently using Lato and/or Open Sans; open to change) 
 
